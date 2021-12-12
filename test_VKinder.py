@@ -1,6 +1,6 @@
 import pytest
-from vk_functions import search_users, get_photo, sort_likes, write_msg, register_user, add_user, add_user_photos, \
-    add_to_black_list
+from vk_functions import search_users, get_photo, sort_likes
+from models import write_msg, register_user, add_user, add_user_photos, add_to_black_list
 
 
 class TestVkinder:
@@ -13,6 +13,7 @@ class TestVkinder:
 
     def teardown(self):
         print('method teardown')
+
 
     """ 
     Тесты по работе приложения
